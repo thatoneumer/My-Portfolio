@@ -1,0 +1,137 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: arial, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-box
+{
+    width: 500px;
+    margin-right: 100px;
+}
+
+.left-box img
+{
+    width: 235px;
+    margin-bottom: -10px;
+}
+
+.left-box p
+{
+    color: rgba(0, 0, 0, 0.492);
+    font-size: 26px;
+    font-weight:300;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+
+
+.right-box .form {
+    padding: 16px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 396px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.right-box .form input
+{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.right-box .form button
+{
+    width: 100%;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    padding: 13px 0;
+    cursor: pointer;
+    background-color: rgb(66, 119, 255);
+
+}
+
+.right-box .form button:hover
+{
+    background-color: rgb(0, 72, 255);
+}
+
+.right-box .form a
+{
+    color: rgb(66, 119, 255);
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.right-box .form a:hover
+{
+    text-decoration: underline;
+}
+
+.right-box .form hr
+{
+    border: 0.6px solid rgba(208, 206, 206, 0.754);
+    margin-bottom: 15px;
+    background-color: rgb(228, 228, 228);
+}
+
+.right-box .form .button a
+{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: rgb(17, 185, 17);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.right-box .button a:hover
+{
+    background-color: rgb(31, 194, 31);
+}
+
+.right-box p {
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.right-box p a {
+    color: #000;
+    text-decoration: none;
+}
+

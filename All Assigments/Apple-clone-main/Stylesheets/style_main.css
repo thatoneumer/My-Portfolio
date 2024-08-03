@@ -1,0 +1,552 @@
+
+:root
+{
+    --myColor: rgb(0, 122, 254); 
+}
+
+
+body
+{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--myColor);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+
+nav
+{
+    width: 100%;
+    height: 44px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.927);
+}
+
+.navbar-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center ;
+    text-align: center;
+    background: blur(50px);
+    gap: 33px;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.navbar-content #display-block
+{
+    display: none;
+}
+
+.header
+{
+    margin-top: 45px;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.header a {
+    text-align: center;
+    text-decoration: none;
+    justify-content:left;
+    align-items: center;
+    border: 1px solid rgb(0, 122, 254);
+    padding: 10px 25px 10px;
+    border-radius: 50px;
+    color: rgb(0, 122, 254);
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+
+.header a:hover {
+    color: white;
+    background-color: rgb(0, 122, 254);
+}
+
+.header-img
+{
+    background: url(../Assets/bg.jpg);
+    height: 550px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header-img img
+{
+    height: 464px;
+    margin-top: 10px;
+}
+
+.header-img2 h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:50px;
+    padding-top: 50px;
+}
+
+.header-img2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    margin-top: -20px;
+}
+
+.header-img2 {
+    height: 550px;
+    background: url(../Assets/bg.jpg);
+    margin-top: -17px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header-img2 img {
+    width: 570px;
+    height: 270px;
+}
+
+.header-img3 {
+    height: 486.5px;
+    background: black;
+    margin-top: -17px;
+    color: white;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header-img3 h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-top: 50px;
+    color: white;
+}
+
+.header-img3 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: lighter;
+    margin-top: -20px;
+}
+
+.header-img3 img {
+    width: 50%;
+    height: 200px;
+    margin-top: 5px;
+}
+
+/* Carousal */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #000000;
+    font-size: 30px;
+    padding: 15px 18px;
+    margin: 0 auto;
+    margin-top: -4.3px;
+    width: 40%;
+    text-align: center;
+    border-bottom: 2px Solid var(--myColor);
+    border-right: 2px Solid var(--myColor);
+    border-left: 2px Solid var(--myColor);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.text a
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--myColor);
+    padding-top: 20px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    padding-right:10px;
+    transition: background-color 0.6s ease;
+}
+
+.text a:hover
+{
+    background-color: rgb(4, 102, 207);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--myColor);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.7s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* carousal */
+
+.container
+{
+    display: flex;
+    width: 1100px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.right-box
+{
+    margin-left: 10px ;
+}
+
+.column
+{
+    margin-bottom: 10px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.774);
+}
+
+.heading-box {
+    position: absolute;
+    top: 8px;
+    left: 110px;
+}
+
+.heading-box h1
+{
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading-box h2
+{
+    margin-top: -25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.heading-box a
+{
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(0, 122, 254);
+    color: var(--myColor);
+    padding: 10px 20px 10px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading-box a:hover
+{
+    color: white;
+    background-color:var(--myColor) ;
+    border: none;
+}
+
+.heading-box #a
+{
+    color: white;
+}
+
+.heading-box #a:hover
+{
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    background: url(../Assets/bg.jpg);
+}
+
+.footer-text
+{
+    width: 1000px;
+    justify-content: center;
+    text-align:left;
+    color: rgba(83, 83, 83, 0.864);
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 50px 10px;
+}
+
+.footer-below
+{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.footer-below h1
+{
+    color: black;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left-1
+{
+    margin-left: 40px;
+}
+
+.left ul, .left-1 ul
+{
+    list-style: none;
+    margin-left: -40px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+.left ul li, .left-1 ul li
+{
+    padding-top: 5px;
+}
+
+.left ul li:hover, .left-1 ul li:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-footer
+{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.last-items
+{
+    text-align: center;
+    margin: 0 auto;
+    width: 1100px;
+}
+.last-items a
+{
+    text-decoration: none;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+.last-items a:hover 
+{
+    text-decoration: underline;
+}
+
+
+/* Media */
+
+
+@media screen  and (max-width: 1000px) {
+
+    body
+    {
+        overflow-x: hidden;
+        background: url(../Assets/bg.jpg);
+    }
+    
+    .nav{
+        height: 70px;
+    }
+    
+    .navbar-content #display-block 
+    {
+            display: flex;
+            position: absolute;
+            right: 10px;
+    }
+    .navbar-content #apple{
+            position: absolute;
+            left: 10px;
+    }
+    .navbar-content #search {
+            position: absolute;
+            right: 30px;
+    }
+    .navbar-content #bag {
+            position: absolute;
+            right: 60px;
+    }
+    .navbar-content span {
+            display: none;
+    }
+
+    .container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-box {
+        margin-left: 1px;
+    }
+
+
+    .footer-text
+    {
+        text-align: center;
+        margin-right: 500px;
+    }
+
+    .footer-below ul li
+    {
+        display: none;
+    }
+
+    .footer-below
+    {
+        display: block;
+        justify-content: center;
+    }
+
+    .footer-below .left-1 h1
+    {
+        margin-left: -40px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black ;
+        cursor: pointer;
+        font-weight: lighter;
+    }
+
+    .footer-below .left h1
+    {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        font-weight: lighter;
+
+    }    
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+    }
+}

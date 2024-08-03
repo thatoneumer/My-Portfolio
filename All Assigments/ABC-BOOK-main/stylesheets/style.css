@@ -1,0 +1,102 @@
+
+body
+{
+    background-color: white;
+}
+.navbar
+{
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid red;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar h1
+{
+    box-shadow: 5px 10px 15px black;
+    background-color: rgb(164, 162, 162);
+    border: 2px solid black;
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 25%;
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: brown;
+    font-weight: bolder;
+    text-shadow: 5px 7px 10px black;
+}
+
+.navbar .links a
+{
+    font-size: 20px;
+    border: 1px solid black;
+    color: azure;
+    margin-left: 10px;
+    padding: 5px;
+    box-shadow: 1px 2px 2px 1px black;
+    text-shadow: 2px 4px 6px black;
+    background-color: rgb(255, 215, 199);
+}
+
+.navbar .links a:hover
+{
+    cursor: grab;
+    background-color: green;
+}
+
+#myBtn {
+    position: fixed;
+    top: 300px;
+    float: right;
+    right: 18.5%;
+    height: 40px;
+    max-width: 60px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(100, 100, 100);
+    padding: .5px;
+    border-radius: 75%;
+
+}
+
+#myBtn:hover {
+    background-color: green;
+}
+
+.container
+{
+    align-items: center;
+    text-align: center;
+    margin-top: 220px;
+    max-width: 100%;
+}
+
+.container .img
+{
+    width: 100%;
+    align-items: center;
+}
+
+.container .img h2
+{
+    background-color: rgb(164, 162, 162);
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid black;
+    font-size: 2.5rem;
+    text-shadow: 2px 4px 6px black;
+    color: beige;
+}
+
+.container .img img
+{
+    padding: 0 10px;
+}
